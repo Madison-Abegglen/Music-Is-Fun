@@ -9,7 +9,7 @@ function drawSongs(results, artist) {
   //YOUR CODING STARTS HERE
   let songs = results;
   let template = `
-      <div class="col-sm-12 text-cool text30">
+      <div class="col-sm-12 text-cool text20">
         <p class="text-center">Showing <span>${songs.length}</span> results for: <em>${artist}</em></p>
       </div>
     `

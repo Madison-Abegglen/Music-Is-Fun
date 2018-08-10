@@ -4,12 +4,12 @@
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.text30 {
-    font-size: 3em;
+.text20 {
+    font-size: 2em;
 }
 
 .bg-cool {
-    background: linear-gradient(45deg, rgb(127, 218, 224), rgb(196, 186, 186));
+    background: linear-gradient(45deg, rgb(196, 186, 186), rgb(127, 218, 224));
 }
 
 .header {
