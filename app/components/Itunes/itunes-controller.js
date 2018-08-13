@@ -23,7 +23,7 @@ function drawSongs(results, artist) {
         <p class="card-text text-truncate">${song.artist}</p>
         <p class="card-text text-truncate">${song.collection}</p>
         <p class="card-text text-truncate">${song.price}</p>
-        <audio src="${song.preview}" controls>
+        <audio src="${song.preview}" onplay="app.controllers.itunesCtrl.playMusic(event)" controls>
         </audio>
       </div>
     </div>
@@ -46,6 +46,16 @@ class ItunesController {
       //changes button back to GET MUSIC once songs are loaded
       $('#get-music-button').text('GET MUSIC');
     })
+  }
+
+  playMusic(event) {
+    let audioArr = document.getElementsByTagName("audio")
+    for (let i = 0; i < audioArr.length; i++) {
+      const currentSong = audioArr[i];
+      if (currentSong !== event.target) {
+        currentSong.pause();
+      }
+    }
   }
 }
 
